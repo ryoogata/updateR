@@ -27,7 +27,8 @@ updateR <- function(admin_password = NULL, file = NA){
   needed_packages <- paste(unlist(needed_packages))
   save(needed_packages, file = "/tmp/needed_packages.RData")
 
-  page_source = "https://cran.rstudio.com/bin/macosx/"
+  #page_source = "https://cran.rstudio.com/bin/macosx/"
+  page_source = "https://mran.blob.core.windows.net/install/mro/3.5.1/"
 
   css <- "body > table"
 if (is.na(file)){
